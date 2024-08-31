@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker rm -f web-nginx && docker run -d --name web-nginx -p 8083:80 ken_pipe'
+                sh 'docker rm -f web-nginx && docker run -d --name web-nginx -p 8082:80 ken_pipe'
             }
         }
     }
